@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eleições</h1>
+        <div class="options">
+            <button onclick="votar(1)">Pres. Joao</button>
+            <button onclick="votar(2)">Pres. Pedro</button>
+            <button onclick="votar(3)">Pres. Thiago</button>
+            <button onclick="votar(4)">Pres. Renan</button>
+            <button onclick="votar(0)">Nulo/Branco</button>
+        </div>
+        <button id="finalizar" onclick="finalizarVotacao()">Finalizar Votação</button>
+        <button id="reiniciar" onclick="reiniciarEleicao()" style="display:none;">Reiniciar Eleição</button>        
+        <div id="votos" style="display:none;"></div>
+        <div id="mensagem"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
